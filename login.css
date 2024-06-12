@@ -1,0 +1,103 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', sans-serif; /* Apply the Google font */
+}
+
+/* Full Height for Body and HTML */
+/* Center the container */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background for visual appeal */
+    font-family: 'Righteous', sans-serif; /* Apply the chosen Google Font */
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(7, 46, 163, 0.9); /* Semi-transparent white background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    padding: 30px;
+    max-width: 500px;
+    width: 100%; /* Full width for responsiveness */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+}
+
+/* Style for the login form */
+.login {
+    text-align: center;
+    padding: 20px;
+}
+
+h4 {
+    color: #336b6b;
+    margin-bottom: 30px;
+}
+
+input.form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button.btn {
+    background-color: #6a11cb;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.btn:hover {
+    background-color: #2575fc;
+}
+
+
+/* Link Styling */
+.login-register-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000000; /* White text color */
+}
+
+.login-register-text a {
+    color: #1470e9; /* Bright link color */
+    text-decoration: none;
+}
+
+.login-register-text a:hover {
+    text-decoration: underline;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #ff5252; /* Red color for error message */
+    margin-bottom: 20px;
+}
+
+/* Media Query for Small Devices */
+@media (max-width: 576px) {
+    .container {
+        padding: 20px;
+    }
+
+    .form-control {
+        margin-bottom: 15px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
